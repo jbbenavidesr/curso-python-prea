@@ -40,3 +40,18 @@ print(objeto.endswith("ndo"))
 # Si no es asi
 print(objeto.startswith("h"))
 print(objeto.endswith("u"))
+
+# find
+# Encuentra un substring en otro y devuelve el indice donde comienza
+objeto.find("mun") # Devuelve el numero 5 que es donce comienza "mun"
+
+objeto.find("juan") # Devuelve -1 porque no existe
+
+# Solo encuentra la primera vez
+mensaje = "quiero muchas papas, porque me gustan las papas"
+mensaje.find("papas") # solo devuelve el indice de la primera vez que dice papas
+
+# Replace 
+# Este metodo lo que hace es reemplaar una parte por otro string
+# Este si reemplaza todas las ocurrencias
+mensaje.replace("papas", "tomates") # Devuelve: "quiero muchas tomates, porque me gustan las tomates"
